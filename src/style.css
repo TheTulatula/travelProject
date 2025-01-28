@@ -1,7 +1,74 @@
-h1 {
+body {
   font-family: "Poppins", sans-serif;
+}
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)),
+    url("/images/miradouroSantaLuzia.JPG");
+  background-size: cover;
+  background-position: center;
+  background-repeat: none;
+  color: white;
+  padding: 280px;
+  text-align: center;
+}
+header h3 {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  margin: 0;
+}
+header h1 {
   font-style: normal;
   font-weight: 700;
   font-size: 96px;
-  line-height: 144px;
+  line-height: 1.5;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  margin: 0;
+}
+
+header h2 {
+  font-size: 56px;
+  font-weight: 400;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  margin: 0;
+}
+header a.headerBtn {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #272044;
+  padding: 16px 32px;
+  margin-top: 32px;
+  display: inline-block;
+  letter-spacing: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: white;
+  border-radius: 6px;
+}
+footer {
+  text-align: center;
+  padding: 30px;
+}
+footer a {
+  text-decoration: none;
+}
+
+@media (max-width: 800px) {
+  header {
+    padding: 30px 0px;
+  }
+  header h1 {
+    font-size: 48px;
+  }
+  header h2 {
+    font-size: 28px;
+  }
+  header h3 {
+    font-size: 12px;
+  }
+  header a.headerBtn {
+    font-size: 12px;
+    padding: 10px 20px;
+  }
 }
