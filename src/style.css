@@ -78,8 +78,58 @@ main p {
 }
 section {
   padding: 60px 30px;
-  max-width: 1200px;
-  margin: auto;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.aboutImg {
+  max-width: 600px;
+  width: 100%;
+}
+section.secondSection {
+  background-color: #f8f8f8;
+}
+.headingSecondSection {
+  text-align: center;
+}
+.card {
+  background-color: white;
+  margin: 30px 0;
+}
+.cardBody {
+  padding: 30px;
+}
+h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  color: #272044;
+  margin: 0;
+}
+h5 {
+  font-weight: 700;
+  font-size: 14px;
+  margin: 0;
+  line-height: 1;
+  color: #272044;
+}
+.btn {
+  display: block;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 16px;
+  background-color: #272044;
+  text-decoration: none;
+}
+.imgResponsive {
+  width: 100%;
+  display: block;
+  height: 150px;
+  width: 150px;
 }
 .grid {
   display: grid;
@@ -90,12 +140,12 @@ section {
 }
 
 .grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.grid-3-columns-uneven {
   grid-template-columns: 1fr 2fr 2fr;
 }
-.aboutImg {
-  max-width: 600px;
-  width: 100%;
-}
+
 footer {
   background-image: linear-gradient(
       rgba(39, 32, 68, 0.9),
