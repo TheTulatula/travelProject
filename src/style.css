@@ -82,7 +82,7 @@ section {
   margin: 0 auto;
 }
 .aboutImg {
-  max-width: 600px;
+  max-width: 550px;
   width: 100%;
 }
 section.secondSection {
@@ -128,12 +128,18 @@ h5 {
 .imgResponsive {
   width: 100%;
   display: block;
-  height: 150px;
-  width: 150px;
+  aspect-ratio: 1/1;
 }
 .grid {
   display: grid;
   grid-gap: 64px;
+}
+.card-header.grid {
+  grid-gap: 0;
+}
+.embed {
+  width: 100%;
+  aspect-ratio: 1/1;
 }
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
@@ -208,5 +214,11 @@ footer p {
   .grid {
     grid-template-columns: 1fr;
     grid-gap: 32px;
+  }
+  .card-header img {
+    display: none;
+  }
+  .embed {
+    aspect-ratio: 16/9;
   }
 }
